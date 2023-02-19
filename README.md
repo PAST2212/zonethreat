@@ -33,7 +33,8 @@ Here i scan as an example all currently **registered 9.757.861 .info Domains** f
 - Possibility to change pre-defined thresholds of fuzzy-matching algorithms if you want to.
 
 **How to install:**
-- git clone https://github.com/PAST2212/zonehreat.git
+- git clone https://github.com/PAST2212/zonethreat.git
+- cd zonethreat
 - pip install -r requirements.txt
 
 **How to run:**
