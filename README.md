@@ -55,3 +55,4 @@ Written in Python 3.7
 
 TO DO:
 - Add more appropriate measures to make domain registrar and whois creation date lookups to give help for domain consolidation operations for specific TLDs / help to find companies forgotten domains
+- Possible API Integration
