@@ -10,7 +10,7 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 
 **Necessery Condition:**
 - Create a free account at https://czds.icann.org/home and request free access to the relevant TLDs / Domain Zone Files you want to scan (.com / .org / .net , etc.). Filetypes are .txt files
-- Take a another source (e.g. paid source) if you already have one
+- Take another source (e.g. paid source) if you already have one
 
 **You can recognize:**
 - combo squatting (e.g. amazon-shop.com), 
