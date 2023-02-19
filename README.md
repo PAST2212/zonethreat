@@ -1,7 +1,7 @@
 # zonethreat
 **Domain / TLD Zone File Monitoring for Brand and Mailing Domain Names**
 
-In opposite to my other projects which depends on newest data feed, here you can monitor directly in the domain zone files that are published by domain authorities (e.g. ICAAN).
+In opposite to my other projects which depends on newest data feed, here you can monitor directly in the domain zone files that are published by domain authorities (e.g. ICANN).
 
 One advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations**, **close cousins of confusingly similar looking domains** or using results for further data engineering / crime investigation operations.
 
@@ -65,5 +65,5 @@ Type in the Name of Domain Zone TXT File you want to monitor (in this example "i
 Written in Python 3.7
 
 TO DO:
-- Add more appropriate measures to make domain registrar and whois creation date lookups to give help for domain consolidation operations for specific TLDs / help to find companies forgotten domains
+- Add more appropriate measures to make domain registrar and whois creation date lookups to give help for domain consolidation operations for specific TLDs / help to find companies forgotten domains / making classification tasks easier
 - Thinking about API Integration
