@@ -45,11 +45,14 @@ Here i scan as an example all currently **registered 9.757.861 .info Domains** f
 ![image](https://user-images.githubusercontent.com/124390875/216693263-1f4b68dd-ac95-4bda-8887-dba1044b3103.png)
 Put your brands or mailing domain names into this list for monitoring operations (without the TLD).
 
+
 ![image](https://user-images.githubusercontent.com/124390875/216693388-b5543d15-26a0-410d-a62b-6e3764b713b6.png)
 Put here common word collisions you want to exclude from the results to reduce false positives
 
+
 ![image](https://user-images.githubusercontent.com/124390875/219960676-1111ff7d-d07e-427f-8d6d-3d32c3c28346.png)
 Create Path "Ubuntu\home\User\Desktop" and Download / Extract your Domain Zone TXT File into this folder
+
 
 ![image](https://user-images.githubusercontent.com/124390875/219960853-0c7a058c-a3bb-47a4-bb4d-fd6ea677b47f.png)
 Type in the Name of Domain Zone TXT File you want to monitor (in this example "info" for .info domains). Please keep in mind that process could take several hours depending of the quantity of analyzed domains, especially for .com domains with over 100.000.000 Million Domains
