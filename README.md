@@ -3,10 +3,10 @@
 
 In opposite to my other projects which depends on newest data feed, here you can monitor directly in the domain zone files that are published by domain authorities (e.g. ICAAN).
 
-The advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations** or other **close cousins of confusingly similar looking domains**. 
+One advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations** or other **close cousins of confusingly similar looking domains**. 
 
 ![image](https://user-images.githubusercontent.com/124390875/219959254-7ad12944-f42f-4b2e-95e7-ca2741927d04.png)
-Here i scan as an example all currently **registered 9.757.861 .info Domains** for brand or phishing domains. Please keep in mind that one scan operation could take several hours.
+Here I scan as an example all currently **registered 9.757.861 .info Domains** for brand or phishing domains. Please keep in mind that one scan operation could take several hours.
 
 **Necessery Condition:**
 - Create a free account at https://czds.icann.org/home and request free access to the relevant TLDs / Domain Zone Files you want to scan (.com / .org / .net , etc.). Filetypes are .txt files
@@ -25,7 +25,7 @@ Here i scan as an example all currently **registered 9.757.861 .info Domains** f
 
 
 **Features:**
-- False Positive Reduction Instruments (e.g. self defined Blacklists, Thresholds depending on string lenght).
+- False Positive Reduction Instruments (self defined Blacklists, Thresholds depending on string lenght).
 - IDN / Homoglyph Detection.
 - CSV Export ("Ubuntu\home\User\Desktop" path is default path to create output).
 - Find domains that are identical or confusingly similar to your name/brand/mailing domain name/etc.
