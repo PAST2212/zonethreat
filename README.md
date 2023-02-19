@@ -3,7 +3,7 @@
 
 In opposite to my other projects which depends on newest data feed, here you can monitor directly in the domain zone files that are published by domain authorities (e.g. ICAAN).
 
-One advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations** or other **close cousins of confusingly similar looking domains**. 
+One advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations**, **close cousins of confusingly similar looking domains** or using results for further data engineering / crime investigation operations.
 
 ![image](https://user-images.githubusercontent.com/124390875/219959254-7ad12944-f42f-4b2e-95e7-ca2741927d04.png)
 Here I scan as an example all currently **registered 9.757.861 .info Domains** for brand or phishing domains in one batch. Please keep in mind that one scan operation could take several hours.
