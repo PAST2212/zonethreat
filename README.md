@@ -9,7 +9,7 @@ The advantage is to scan **millions over millions** of currently registered doma
 Here i scan as an example all currently **registered 9.757.861 .info Domains** for brand or phishing domains. Please keep in mind that one scan operation could take several hours.
 
 **Necessery Condition:**
-- Create a free account at https://czds.icann.org/home and request free access to the relevant TLDs / Domain Zone Files you want to scan (.com / .org / .net , etc.)
+- Create a free account at https://czds.icann.org/home and request free access to the relevant TLDs / Domain Zone Files you want to scan (.com / .org / .net , etc.). Filetypes are .txt files
 
 **You can recognize:**
 - combo squatting (e.g. amazon-shop.com), 
@@ -47,6 +47,13 @@ Put your brands or mailing domain names into this list for monitoring operations
 
 ![image](https://user-images.githubusercontent.com/124390875/216693388-b5543d15-26a0-410d-a62b-6e3764b713b6.png)
 Put here common word collisions you want to exclude from the results to reduce false positives
+
+![image](https://user-images.githubusercontent.com/124390875/219960676-1111ff7d-d07e-427f-8d6d-3d32c3c28346.png)
+Create Path "Ubuntu\home\User\Desktop" and Download / Extract your Domain Zone TXT File into this folder
+
+![image](https://user-images.githubusercontent.com/124390875/219960853-0c7a058c-a3bb-47a4-bb4d-fd6ea677b47f.png)
+Type in the Name of Domain Zone TXT File you want to monitor (in this example "info" for .info domains). Please keep in mind that process could take several hours depending of the quantity of analyzed domains, especially for .com domains with over 100.000.000 Million Domains
+
 
 **Authors**
 - Patrick Steinhoff (https://www.linkedin.com/in/patrick-steinhoff-168892222/)
