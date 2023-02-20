@@ -176,7 +176,7 @@ def A_record(domain):
 console_file_path = f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv'
 if not os.path.exists(console_file_path):
     print(f'Create Monitoring from Domain Zone File: {zonefile}')
-    header = ['Domains', 'Keyword Found', 'Domain Registrar', 'Detected By']
+    header = ['Domains', 'Keyword Found', 'Detected By']
     with open(console_file_path, 'w') as f:
         writer = csv.writer(f)
         writer.writerow(header)
