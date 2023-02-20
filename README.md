@@ -8,7 +8,7 @@ One advantage is to scan **millions over millions** of currently registered doma
 ![image](https://user-images.githubusercontent.com/124390875/219959254-7ad12944-f42f-4b2e-95e7-ca2741927d04.png)
 Here I scan as an example all currently **registered 9.757.861 .info Domains** for brand or phishing domains in one batch. Please keep in mind that one scan operation could take several hours.
 
-**Necessery Condition:**
+**Necessary Condition:**
 - Create a free account at https://czds.icann.org/home and request free access to the relevant TLDs / Domain Zone Files you want to scan (.com / .org / .net , etc.). Filetypes are .txt files
 - Take another source (e.g. paid source) if you already have one
 
