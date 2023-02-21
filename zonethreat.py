@@ -24,7 +24,6 @@ brandnames = ["tui", "tuitravel", "tuiairlines", "tuigroup", "tuicruises", "tuif
 Blacklist = ["intuit", "tuition"]
 
 print("Please extract downloaded .txt Domain Zone File to Standard Path Ubuntu/home/User/Desktop")
-print()
 zonefile = input('Type in Name of TLD Zone TXT-File you want to scan and press enter: ')
 
 def damerau(keyword, domain):
