@@ -172,6 +172,12 @@ def A_record(domain):
         pass
     except dns.exception.DNSException:
         pass
+    
+def pandasmanagement():
+    df = pd.read_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', delimiter=',')
+    df.drop_duplicates(inplace=True, subset=['Domains'])
+    df['Domain Registrar'] = df.apply(lambda x: whois_registrar(x['Domains']), axis=1)
+    df.to_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', index=False)
 
 console_file_path = f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv'
 if not os.path.exists(console_file_path):
@@ -215,8 +221,6 @@ while file1:
     if line == '':
         break
 
-time.sleep(5)
+time.sleep(3)
 
-df = pd.read_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv')
-df.drop_duplicates(inplace=True)
-df.to_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', index=False)
+pandasmanagement()
