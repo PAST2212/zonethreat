@@ -30,7 +30,7 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 - CSV Export ("Ubuntu\home\User\Desktop" path is default path to create output).
 - Find domains that are identical or confusingly similar to your name/brand/mailing domain name/etc.
 - Mix of Edit-based and Token-based textdistance algorithms to increase result quality.
-- Domain Registrar, Domain Creation Date, MX- and A-Record lookups are included but not activated by default.
+- Domain Creation Date, MX- and A-Record lookups are included but not activated by default.
 - Possibility to change pre-defined thresholds of fuzzy-matching algorithms if you want to.
 
 **How to install:**
