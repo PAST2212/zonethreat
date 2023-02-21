@@ -41,6 +41,10 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 **How to run:**
 - python3 zonethreat.py
 
+**Changelog**
+- Please see Changelog for Updates:
+- https://github.com/PAST2212/zonethreat/blob/main/Changelog
+
 **Before the first run - How it Works:**
 
 ![image](https://user-images.githubusercontent.com/124390875/216693263-1f4b68dd-ac95-4bda-8887-dba1044b3103.png)
@@ -65,6 +69,6 @@ Type in the Name of Domain Zone TXT File you want to monitor (in this example "i
 Written in Python 3.7
 
 TO DO:
-- Add more appropriate measures to make domain registrar and whois creation date lookups to give help for domain consolidation operations for specific TLDs / help to find companies forgotten domains / making classification tasks easier
+- Add more appropriate measures to give help for domain consolidation operations for specific TLDs / help to find companies forgotten domains / making classification tasks easier
 - Thinking about API Integration
 - Improve Performance
