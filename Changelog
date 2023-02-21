@@ -1,0 +1,5 @@
+v 1.01 (21.02.2023)
+- add Pandas to delete duplicates and make Domain Registrar Lookups for better evaluation if domain belongs to own (consolidated) portfolio or not
+
+v 1.0 (19.02.2023)
+Initial Release
