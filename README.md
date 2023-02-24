@@ -41,6 +41,10 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 **How to run:**
 - python3 zonethreat.py
 
+**How to update:**
+Type command in zonethreat directory
+- git pull
+
 **Changelog**
 - Please see Changelog for Updates:
 - https://github.com/PAST2212/zonethreat/blob/main/Changelog
