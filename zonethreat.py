@@ -171,12 +171,6 @@ def A_record(domain):
         pass
     except dns.exception.DNSException:
         pass
-    
-def pandasmanagement():
-    df = pd.read_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', delimiter=',')
-    df.drop_duplicates(inplace=True, subset=['Domains'])
-    df['Domain Registrar'] = df.apply(lambda x: whois_registrar(x['Domains']), axis=1)
-    df.to_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', index=False)
 
 console_file_path = f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv'
 if not os.path.exists(console_file_path):
@@ -191,13 +185,28 @@ lines2 = file2.readlines()
 print(f'Quantity of Registered Domains to be Scanned for Brand Impersonations and Similar looking Domains: ', len(lines2), f'.{zonefile} Domains')
 file2.close()
 
-time.sleep(5)
+time.sleep(3)
+
+def processing_Outputfile():
+    df = pd.read_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', delimiter=',')
+    df.drop_duplicates(inplace=True, subset=['Domains'])
+    df['Domain Registrar'] = df.apply(lambda x: whois_registrar(x['Domains']), axis=1)
+    df.to_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', index=False)
+
+def preprocessing_Inputfile():
+    df = pd.read_csv(f'{desktop}/{zonefile}.txt', delimiter='\t')
+    df.drop(df.columns[1:], axis=1, inplace=True)
+    df.drop_duplicates(inplace=True)
+    df.to_csv(f'{desktop}/{zonefile}.txt', index=False)
+
+preprocessing_Inputfile()
+
+time.sleep(3)
 
 file1 = open(f'{desktop}/{zonefile}.txt', 'r', encoding='utf-8-sig')
 while file1:
     lines = file1.readline()
-    line = lines.split('.\t')[0]
-    domain = line.strip()
+    domain = lines.strip().rstrip('.')
     for keyword in brandnames:
         with open(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', mode='a', newline='') as f:
             writer = csv.writer(f, delimiter=',')
@@ -217,9 +226,9 @@ while file1:
                 latin_domain = unicodedata.normalize('NFKD', unconfuse(domain)).encode('latin-1', 'ignore').decode('latin-1')
                 if keyword in latin_domain:
                     writer.writerow([domain, keyword, 'IDN Match'])
-    if line == '':
+    if lines == '':
         break
 
 time.sleep(3)
 
-pandasmanagement()
+processing_Outputfile()
