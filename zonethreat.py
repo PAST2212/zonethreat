@@ -180,13 +180,6 @@ if not os.path.exists(console_file_path):
         writer = csv.writer(f)
         writer.writerow(header)
 
-file2 = open(f'{desktop}/{zonefile}.txt', 'r')
-lines2 = file2.readlines()
-print(f'Quantity of Registered Domains to be Scanned for Brand Impersonations and Similar looking Domains: ', len(lines2), f'.{zonefile} Domains')
-file2.close()
-
-time.sleep(3)
-
 def processing_Outputfile():
     df = pd.read_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', delimiter=',')
     df.drop_duplicates(inplace=True, subset=['Domains'])
@@ -200,6 +193,11 @@ def preprocessing_Inputfile():
     df.to_csv(f'{desktop}/{zonefile}.txt', index=False)
 
 preprocessing_Inputfile()
+
+file2 = open(f'{desktop}/{zonefile}.txt', 'r')
+lines2 = file2.readlines()
+print(f'Quantity of Registered and deduplicated Domains to be Scanned for Brand Impersonations and Similar looking Domains: ', len(lines2), f'.{zonefile} Domains')
+file2.close()
 
 time.sleep(3)
 
