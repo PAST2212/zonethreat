@@ -64,12 +64,12 @@ Put your brands or mailing domain names into this list for monitoring operations
 Put here common word collisions you want to exclude from the results to reduce false positives
 
 
-![image](https://user-images.githubusercontent.com/124390875/219960676-1111ff7d-d07e-427f-8d6d-3d32c3c28346.png)
-Create Path "Ubuntu\home\User\Desktop" and Download / Extract your Domain Zone TXT File into this folder
+![image](https://github.com/PAST2212/zonethreat/assets/124390875/0e7cedf3-6cdf-4525-8363-7ebe015cc01d)
+Download / Extract your Domain Zone TXT File into the path where this programm is running (Program tells you where).
 
 
 ![image](https://user-images.githubusercontent.com/124390875/219960853-0c7a058c-a3bb-47a4-bb4d-fd6ea677b47f.png)
-Type in the Name of Domain Zone TXT File you want to monitor (in this example "info" for .info domains). Please keep in mind that process could take several hours depending of the quantity of analyzed domains, especially for .com domains with over 100.000.000 Million Domains
+Type in the Name of Domain Zone TXT File you want to monitor (in this example "info" for .info domains). Please keep in mind that process could take time depending on the quantity of analyzed domains, especially for .com domains with over 100.000.000 Million Domains
 
 
 **Authors**
