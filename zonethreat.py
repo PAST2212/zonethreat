@@ -157,7 +157,7 @@ def create_new_csv_file_domainresults():
     console_file_path = f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv'
     if not os.path.exists(console_file_path):
         print(f'Create Monitoring from Domain Zone File: {zonefile} in {desktop}')
-        header = ['Domains', 'Keyword Found', 'Detected By', 'Domain Registrar', 'Status']
+        header = ['Domains', 'Keyword Found', 'Detected By', 'Domain Registrar', 'Registration Status']
         with open(console_file_path, 'w') as f:
             writer = csv.writer(f)
             writer.writerow(header)
@@ -167,8 +167,8 @@ def postprocessing_Outputfile():
     df = pd.read_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', delimiter=',')
     df.drop_duplicates(inplace=True, subset=['Domains'])
     df['Domain Registrar'] = df.apply(lambda x: registrar_to_csv(x['Domains']), axis=1)
-    df['Status'] = df.apply(lambda x: status_to_csv(x['Domains']), axis=1)
-    df = df.drop(df[df['Status'] == 'NXDOMAIN'].index)
+    df['Registration Status'] = df.apply(lambda x: status_to_csv(x['Domains']), axis=1)
+    df = df.drop(df[df['Registration Status'] == 'NXDOMAIN'].index)
     df.to_csv(f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv', index=False)
 
 
