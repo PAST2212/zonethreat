@@ -28,6 +28,7 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 
 
 **Features:**
+- Multithreading (50 workers by defaul) & Multiprocessing
 - False Positive Reduction Instruments (self defined Blacklists, Thresholds depending on string lenght).
 - IDN / Homoglyph Detection.
 - CSV Export
@@ -79,3 +80,4 @@ Written in Python 3.7
 TO DO:
 - Active Domain Creation Date as additional csv column
 - API Integration from https://github.com/icann/czds-api-client-python and therefore scanning multiple TLD Zones at once
+- Add Possibility to parse Arguments (e.g. workers for multithreading)
