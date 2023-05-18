@@ -106,8 +106,8 @@ def whois_registrar(domain):
 # Check for domain registration
 def NXDOMAIN_record(domain):
     resolver = dns.resolver.Resolver()
-    resolver.timeout = 1
-    resolver.lifetime = 1
+    resolver.timeout = 3
+    resolver.lifetime = 3
     try:
         resolver.resolve(domain, 'NS')
         return domain_status.append((domain, 'OK'))
