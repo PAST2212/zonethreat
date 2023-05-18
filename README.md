@@ -1,6 +1,9 @@
 # zonethreat
 **Domain / TLD Zone File Monitoring for Brand and Mailing Domain Names**
 
+**New in Version 2.0**
+- Add Multiprocessing and Multithreading to speed up performance drastically
+
 In opposite to my other projects which depends on newest data feed, here you can monitor directly in the domain zone files that are published by domain authorities (e.g. ICANN).
 
 One advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations**, **close cousins of confusingly similar looking domains** or using results for further data engineering / crime investigation operations.
@@ -27,7 +30,7 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 **Features:**
 - False Positive Reduction Instruments (self defined Blacklists, Thresholds depending on string lenght).
 - IDN / Homoglyph Detection.
-- CSV Export ("Ubuntu\home\User\Desktop" path is default path to create output).
+- CSV Export
 - Find domains that are identical or confusingly similar to your name/brand/mailing domain name/etc.
 - Mix of Edit-based and Token-based textdistance algorithms to increase result quality.
 - Domain Creation Date, MX- and A-Record lookups are included but not activated by default.
@@ -44,6 +47,7 @@ Here I scan as an example all currently **registered 9.757.861 .info Domains** f
 **How to update:**
 Type command in zonethreat directory
 - git pull
+- In case of a Merge Error: Try "git reset --hard" before "git pull"
 
 **Changelog**
 - Please see Changelog for Updates:
@@ -73,6 +77,5 @@ Type in the Name of Domain Zone TXT File you want to monitor (in this example "i
 Written in Python 3.7
 
 TO DO:
-- Add more appropriate measures to give help for domain consolidation operations for specific TLDs / help to find companies forgotten domains / making classification tasks easier
-- Thinking about API Integration from https://github.com/icann/czds-api-client-python
-- Improve Performance
+- Active Domain Creation Date as additional csv column
+- API Integration from https://github.com/icann/czds-api-client-python and therefore scanning multiple TLD Zones at once
