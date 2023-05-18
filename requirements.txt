@@ -5,3 +5,4 @@ whois==0.9.16
 whoisit==2.6.2
 dnspython==2.2.1
 pandas==1.3.5
+colorama==0.4.5
