@@ -80,5 +80,5 @@ Written in Python 3.7
 TO DO:
 - Activate Domain Creation Date as additional csv column
 - API Integration from https://github.com/icann/czds-api-client-python and therefore scanning multiple TLD Zones at once
-- Add Possibility to parse Arguments (e.g. workers for multithreading)
+- Add Possibility to parse Arguments (e.g. workers for multithreading, e.g. add nameservers)
 - other fixes
