@@ -1,3 +1,9 @@
+v 2.1 (18.08.2023)
+- bug fixes
+- change NS lookups to Website Status. Check if Domain is Online or Not (by NXDOMAIN responses and HTTP Status Codes)
+- Read .txt files from folders
+- Change from jaccard unigram (n=1) to jaccard bigram (n=2) algorithm.
+
 v 2.0 (18.05.2023)
 - add Pandas to postprocess Outpufile
 - Add Multiprocessing and Multithreading to speed up performance drastically
