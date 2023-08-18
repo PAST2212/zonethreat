@@ -94,10 +94,12 @@ def whois_creation_date(domain):
 # Make Domain registrar lookup via WHOIS protocol.
 def whois_registrar(domain):
     hey = []
+    hey.append(domain)
     try:
         registered = whois.whois(domain)
-        hey.append(domain)
-        hey.append(str(registered.registrar).replace(',', ''))
+        registered_1 = registered.registrar.replace(',', '')
+        time.sleep(0.5)
+        hey.append(registered_1)
         return list(filter(None, hey))
 
     except:
@@ -165,7 +167,6 @@ def write_domain_monitoring_results_to_csv():
 def create_new_csv_file_domainresults():
     console_file_path = f'{desktop}/Registered-Domains from TLD-Zone-File_{zonefile}.csv'
     if not os.path.exists(console_file_path):
-        print(f'Create Monitoring from Domain Zone File: {zonefile} in {desktop}')
         header = ['Domains', 'Keyword Found', 'Detected By', 'Domain Registrar', 'Status Website']
         with open(console_file_path, 'w') as f:
             writer = csv.writer(f)
@@ -282,6 +283,7 @@ if __name__ == '__main__':
     print('Please download zonefile you want to monitor from ICANN\n')
     print(f"Please extract downloaded .txt Domain Zone File to Standard Path {desktop}\n")
     zonefile = input('Type in Name of TLD Zone TXT-File you want to scan and press enter: ')
+    print(f'Create Monitoring from Domain Zone File: "{zonefile}" in {desktop}/Zonefile')
     preprocessing_inputfile()
     read_input_keywords_file()
     read_input_blacklist_file()
