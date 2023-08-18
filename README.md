@@ -55,7 +55,9 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 
 3. Download / Extract your Domain Zone TXT File into the folder "Zonefile". 
 
-4. Type in the filename of file in folder "Zonefile" you want to scan (in this example "info" for .info domains in info.txt file). Please keep in mind that process could take time depending on the quantity of analyzed domains and technical resources.
+4. Run the script.
+
+5. Type in the filename of file in folder "Zonefile" you want to scan (in this example "info" for .info domains in info.txt file). Please keep in mind that process could take time depending on the quantity of analyzed domains and technical resources.
 ![image](https://user-images.githubusercontent.com/124390875/219960853-0c7a058c-a3bb-47a4-bb4d-fd6ea677b47f.png)
 
 **Necessary Condition:**
