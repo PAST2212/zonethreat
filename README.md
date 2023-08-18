@@ -16,13 +16,13 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 - typical look-alikes / phishing / so called CEO-Fraud domains (e.g. arnazon.com (rn = m),
 - and other forms of phishing websites / look-alike Domains (e.g. 𝗉ay𝞀al.com - greek letter RHO '𝞀' instead of latin letter 'p')
 
-**Example Screenshot**
+**Example Screenshot of registered .info domains**
 
 ![image](https://github.com/PAST2212/zonethreat/assets/124390875/25120d1f-9f32-4b2f-9bcc-0ef0f00a854b)
 
 
 
-# **Features:**
+# **Features**
 - Domain Registrar Feature; Abilitiy to differentiate between own registered domains and third party registered domains in case of consolidated (company) domain portfolio
 - Website Status: Check if detected Website is online or not
 - Multithreading (50 workers by defaul) & Multiprocessing
