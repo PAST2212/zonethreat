@@ -8,7 +8,7 @@ In opposite to my other projects which depends on newest data feed, here you can
 One advantage is to scan **millions over millions** of currently registered domains for one specific TLD at a time (e.g. .com / .net / .info, etc.) to find **brand impersonations**, **close cousins of confusingly similar looking domains** or using results for further data engineering / crime investigation operations.
 
 ![image](https://user-images.githubusercontent.com/124390875/219959254-7ad12944-f42f-4b2e-95e7-ca2741927d04.png)
-Here I scan as an example all **registered 9.757.861 .info Domains** for brand or phishing domains in one batch. Please keep in mind that one scan operation could take time.
+Here I scan as an example all **registered 9.757.861 .info Domains** for brand or phishing domains in one batch.
 
 # **Detection Scope**
 - combo squatting (e.g. amazon-shop.com), 
@@ -18,11 +18,13 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 
 **Example Screenshot**
 
-![image](https://user-images.githubusercontent.com/124390875/219959586-d78cbaac-20ae-4092-ae4e-b58ad1fdb19d.png)
+![image](https://github.com/PAST2212/zonethreat/assets/124390875/25120d1f-9f32-4b2f-9bcc-0ef0f00a854b)
+
 
 
 # **Features:**
-- Domain Registrar lookups included. Abilitiy to differentiate between own registered domains and third party registered domains in case of consolidated (company) domain portfolio 
+- Domain Registrar Feature; Abilitiy to differentiate between own registered domains and third party registered domains in case of consolidated (company) domain portfolio
+- Website Status: Check if detected Website is online or not
 - Multithreading (50 workers by defaul) & Multiprocessing
 - False Positive Reduction Instruments (self defined Blacklists, Thresholds depending on string lenght).
 - IDN / Homoglyph Detection.
@@ -57,7 +59,7 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 
 4. Run the script.
 
-5. Type in the filename of file in folder "Zonefile" you want to scan (in this example "info" for .info domains in info.txt file). Please keep in mind that process could take time depending on the quantity of analyzed domains and technical resources.
+5. Type in the filename of file in folder "Zonefile" you want to scan (in this example "info" for .info domains in info.txt file).
 ![image](https://user-images.githubusercontent.com/124390875/219960853-0c7a058c-a3bb-47a4-bb4d-fd6ea677b47f.png)
 
 **Necessary Condition:**
@@ -78,6 +80,7 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 - Activate Domain Creation Date as additional csv column
 - API Integration from https://github.com/icann/czds-api-client-python and therefore scanning multiple TLD Zones at once
 - Add Possibility to parse Arguments (e.g. workers for multithreading, e.g. add nameservers)
+- Add Additional WHOIS (Registrar lookup) possibilities to bypass rate limits
 
 **Additional**
 - written in python 3.7
