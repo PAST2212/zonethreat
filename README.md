@@ -55,7 +55,7 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 2. Put common word collisions into this TXT file "User Input/blacklist_keywords.txt" line per line you want to exclude from the results to reduce false positives.
 -  e.g. blacklist "lotto" if you monitor keyword "otto", e.g. blacklist "amazonas" if you want to monitor "amazon", e.g. blacklist "intuitive" if you want to monitor "tui" ...
 
-3. Download / Extract your Domain Zone TXT File into the folder "Zonefile". 
+3. Download / Extract your Domain Zone TXT File into the folder "Zonefile". A dummy and empty "info.txt" file is included. Delete this.
 
 4. Run the script.
 
