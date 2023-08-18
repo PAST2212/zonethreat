@@ -129,6 +129,7 @@ def website_status(domain):
     resolver = dns.resolver.Resolver()
     resolver.timeout = 5
     resolver.lifetime = 5
+    resolver.nameservers = ['8.8.8.8']
     try:
         ns_lookup = resolver.resolve(domain, 'NS')
         if ns_lookup:
@@ -332,5 +333,5 @@ if __name__ == '__main__':
     multithreading_registrar(50)
     multithreading_status(50)
     postprocessing_outputfile()
-    print(FG + 'End Domain Registrar Lookup and and check for Website Status\n' + S)
+    print(FG + 'End Domain Registrar Lookup Website Status checks\n' + S)
     print('Please check:', FY + f'{desktop}/Registered-Domains from TLD-Zone-File_.csv' + S, ' file for results\n')
