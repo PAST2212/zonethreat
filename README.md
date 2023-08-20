@@ -80,7 +80,7 @@ Here I scan as an example all **registered 9.757.861 .info Domains** for brand o
 - Activate Domain Creation Date as additional csv column
 - API Integration from https://github.com/icann/czds-api-client-python and therefore scanning multiple TLD Zones at once
 - Add Possibility to parse Arguments (e.g. workers for multithreading, e.g. add nameservers)
-- Add Additional mechanisms to bypass WHOIS rate limits (e.g. RDAP protocol)
+- Add Additional mechanisms to bypass WHOIS rate limits (e.g. RDAP protocol) / add async IO lookups
 
 **Additional**
 - written in python 3.7
