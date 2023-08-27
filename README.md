@@ -1,7 +1,7 @@
 # zonethreat
 **Domain / TLD Zone File Monitoring for Brand and Mailing Domain Names**
 
-**Current Version 2.1**
+**Current Version 2.11**
 
 In opposite to my other projects which depends on newest data feed, here you can monitor directly in the domain zone files that are published by domain authorities (e.g. ICANN).
 
