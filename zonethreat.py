@@ -202,7 +202,7 @@ def read_input_zonefile():
         sys.exit()
 
 
-def fuzzyoperations(x, container1, container2):
+def fuzzyoperations(x, container1, container2, blacklist):
     index = x[0]  # index of sub list
     value = x[1]  # content of sub list
     results_temp = []
@@ -311,7 +311,7 @@ if __name__ == '__main__':
     que_1 = multiprocessing.Queue()
     que_2 = multiprocessing.Queue()
 
-    processes = [multiprocessing.Process(target=fuzzyoperations, args=(sub, que_1, que_2)) for sub in sub_list]
+    processes = [multiprocessing.Process(target=fuzzyoperations, args=(sub, que_1, que_2, blacklist)) for sub in sub_list]
 
     for p in processes:
         p.daemon = True
